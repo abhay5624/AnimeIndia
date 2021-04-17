@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0%;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffdb83), color-stop(#ffe094), color-stop(#fee4a4), color-stop(#fee9b5), to(#fdedc5));
+  background-image: linear-gradient(to bottom, #ffdb83, #ffe094, #fee4a4, #fee9b5, #fdedc5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 99;
+}
+
+header .logotext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+  text-decoration: none;
+}
+
+header .logotext a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .logotext .nocolor {
+  color: #2f4858;
+}
+
+header .logotext a:hover {
+  color: #2f4858;
+}
+
+header .logotext a:hover .nocolor {
+  color: #fff;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+  z-index: 99;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #2f4858;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: white;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.slidebar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 99;
+}
+
+.slidebar .slide {
+  margin: 20px;
+  height: 800px;
+  border-radius: 100px;
+  color: #2f4858;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  text-align: left;
+  -webkit-transition: width;
+  transition: width;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+.slidebar .slide .textbox {
+  margin-top: 164%;
+}
+
+.slidebar #firstslide {
+  width: 85%;
+  background-image: url(images/1st.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.slidebar #firstslide .discription {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.644);
+  border-radius: 100px;
+  opacity: 1;
+  -webkit-transition: opacity;
+  transition: opacity;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transition-delay: 800ms;
+          transition-delay: 800ms;
+}
+
+.slidebar #firstslide .discription h1 {
+  padding-top: 40px;
+  text-align: center;
+  color: white;
+}
+
+.slidebar #firstslide .discription p {
+  padding: 30px;
+  color: #ffdb83;
+  text-align: justify;
+}
+
+.slidebar #secondslide {
+  background-image: url(images/2nd.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 5%;
+}
+
+.slidebar #secondslide .discription {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.644);
+  border-radius: 100px;
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity;
+  transition: opacity;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transition-delay: 800ms;
+          transition-delay: 800ms;
+}
+
+.slidebar #secondslide .discription h1 {
+  padding-top: 40px;
+  text-align: center;
+  color: white;
+}
+
+.slidebar #secondslide .discription p {
+  padding: 30px;
+  color: #ffdb83;
+  text-align: justify;
+}
+
+.slidebar #thirdslide {
+  background-image: url(images/3rd.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 5%;
+}
+
+.slidebar #thirdslide .discription {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.644);
+  border-radius: 100px;
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity;
+  transition: opacity;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transition-delay: 800ms;
+          transition-delay: 800ms;
+}
+
+.slidebar #thirdslide .discription h1 {
+  padding-top: 40px;
+  text-align: center;
+  color: white;
+}
+
+.slidebar #thirdslide .discription p {
+  padding: 30px;
+  color: #ffdb83;
+  text-align: justify;
+}
+
+.slidebar #fourthslide {
+  background-image: url(images/4th.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 5%;
+}
+
+.slidebar #fourthslide .discription {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.644);
+  border-radius: 100px;
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity;
+  transition: opacity;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+  -webkit-transition-delay: 800ms;
+          transition-delay: 800ms;
+}
+
+.slidebar #fourthslide .discription h1 {
+  padding-top: 40px;
+  text-align: center;
+  color: white;
+}
+
+.slidebar #fourthslide .discription p {
+  padding: 30px;
+  color: #ffdb83;
+  text-align: justify;
+}
+
+.animelist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin-right: 10%;
+  padding-left: 100px;
+}
+
+.animelist h1 {
+  font-family: "Poppins", sans-serif;
+  padding: 100px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.animelist .animeli {
+  width: 80%;
+  padding: 20px;
+}
+
+.animelist .animeli h2 {
+  text-align: left;
+  color: #2f4858;
+}
+
+.animelist .animeli h2:hover {
+  color: #00dbb7;
+}
+
+.animelist .animeli p {
+  font-size: large;
+}
+
+.animelist .animeli .titleimg img {
+  width: 220px;
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.customnavbttn {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #2f4858;
+  display: none;
+  -webkit-transform: translate(45%, 45%);
+          transform: translate(45%, 45%);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.customnavbttn h1 {
+  margin-right: 40%;
+  margin-bottom: 30%;
+  color: white;
+  font-size: 50px;
+  padding-bottom: 100px;
+}
+
+.circle {
+  border-radius: 50%;
+  -webkit-animation-duration: 7000ms;
+          animation-duration: 7000ms;
+  position: fixed;
+  bottom: -10%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  background-color: rgba(240, 229, 84, 0.452);
+  z-index: 1;
+}
+
+#firstcircle {
+  -webkit-animation-duration: 5000ms;
+          animation-duration: 5000ms;
+  width: 150px;
+  height: 150px;
+  right: 0%;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
+#secondcircle {
+  -webkit-animation-duration: 2500ms;
+          animation-duration: 2500ms;
+  width: 300px;
+  height: 300px;
+  right: 10%;
+  -webkit-animation-delay: 3300ms;
+          animation-delay: 3300ms;
+}
+
+#thirdcircle {
+  -webkit-animation-duration: 10000ms;
+          animation-duration: 10000ms;
+  width: 100px;
+  height: 100px;
+  right: 20%;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+
+#fourthcircle {
+  -webkit-animation-duration: 10000ms;
+          animation-duration: 10000ms;
+  width: 95px;
+  height: 95px;
+  right: 30%;
+  -webkit-animation-delay: 4000ms;
+          animation-delay: 4000ms;
+}
+
+#lastcircle {
+  -webkit-animation-duration: 4000ms;
+          animation-duration: 4000ms;
+  width: 100px;
+  height: 100px;
+  right: 40%;
+  -webkit-animation-delay: 6500ms;
+          animation-delay: 6500ms;
+}
+
+.footer {
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  background-color: #2f4858;
+  color: #ffdb83;
+  font-size: 20px;
+  z-index: 99;
+}
+
+@-webkit-keyframes circlesanimate {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: 150%;
+  }
+}
+
+@keyframes circlesanimate {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: 150%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

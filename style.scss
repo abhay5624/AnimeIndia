@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+$firstcolor: #ffdb83;
+$secondcolor: #2f4858;
+$thirdcolor: #00dbb7;
+$bold: 600;
+$heading: "Poppins", sans-serif;
+$discolor: rgba(0, 0, 0, 0.644);
+* {
+  margin: 0%;
+  box-sizing: border-box;
+  padding: 0%;
+}
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #ffdb83,
+    #ffe094,
+    #fee4a4,
+    #fee9b5,
+    #fdedc5
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+  .logotext {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    text-decoration: none;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .nocolor {
+      color: $secondcolor;
+    }
+    a:hover {
+      color: $secondcolor;
+      .nocolor {
+        color: #fff;
+      }
+    }
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  z-index: 99;
+  a {
+    text-decoration: none;
+    color: $secondcolor;
+    font-family: $heading;
+    padding: 20px;
+    text-transform: capitalize;
+    font-weight: $bold;
+  }
+  a:hover {
+    color: white;
+    transform: scale(1.5);
+  }
+}
+.slidebar {
+  width: 100%;
+  display: flex;
+  height: fit-content;
+  background-color: inherit;
+  justify-content: center;
+  z-index: 99;
+  .slide {
+    margin: 20px;
+    height: 800px;
+    border-radius: 100px;
+    color: $secondcolor;
+    font-weight: $bold;
+    font-size: 30px;
+    font-family: $heading;
+    text-transform: capitalize;
+    text-align: left;
+    transition: width;
+    transition-duration: 1000ms;
+
+    .textbox {
+      margin-top: 164%;
+    }
+  }
+  #firstslide {
+    width: 85%;
+    background-image: url(images/1st.jpg);
+    background-size: cover;
+    background-position: center;
+    .discription {
+      width: 100%;
+      height: 100%;
+      background-color: $discolor;
+      border-radius: 100px;
+      opacity: 1;
+      transition: opacity;
+      transition-duration: 400ms;
+      transition-delay: 800ms;
+      h1 {
+        padding-top: 40px;
+        text-align: center;
+        color: white;
+      }
+      p {
+        padding: 30px;
+        color: $firstcolor;
+        text-align: justify;
+      }
+    }
+  }
+  #secondslide {
+    background-image: url(images/2nd.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 5%;
+
+    .discription {
+      width: 100%;
+      height: 100%;
+      background-color: $discolor;
+      border-radius: 100px;
+      display: none;
+      opacity: 0;
+      transition: opacity;
+      transition-duration: 400ms;
+      transition-delay: 800ms;
+      h1 {
+        padding-top: 40px;
+        text-align: center;
+        color: white;
+      }
+      p {
+        padding: 30px;
+        color: $firstcolor;
+        text-align: justify;
+      }
+    }
+  }
+  #thirdslide {
+    background-image: url(images/3rd.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 5%;
+    .discription {
+      width: 100%;
+      height: 100%;
+      background-color: $discolor;
+      border-radius: 100px;
+      display: none;
+      opacity: 0;
+      transition: opacity;
+      transition-duration: 400ms;
+      transition-delay: 800ms;
+      h1 {
+        padding-top: 40px;
+        text-align: center;
+        color: white;
+      }
+      p {
+        padding: 30px;
+        color: $firstcolor;
+        text-align: justify;
+      }
+    }
+  }
+  #fourthslide {
+    background-image: url(images/4th.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 5%;
+
+    .discription {
+      width: 100%;
+      height: 100%;
+      background-color: $discolor;
+      border-radius: 100px;
+      display: none;
+      opacity: 0;
+      transition: opacity;
+      transition-duration: 400ms;
+      transition-delay: 800ms;
+      h1 {
+        padding-top: 40px;
+        text-align: center;
+        color: white;
+      }
+      p {
+        padding: 30px;
+        color: $firstcolor;
+        text-align: justify;
+      }
+    }
+  }
+}
+.animelist {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-right: 10%;
+  padding-left: 100px;
+  h1 {
+    font-family: $heading;
+    padding: 100px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .animeli {
+    width: 80%;
+    padding: 20px;
+    h2 {
+      text-align: left;
+      color: $secondcolor;
+    }
+    h2:hover {
+      color: $thirdcolor;
+    }
+    p {
+      font-size: large;
+    }
+    .titleimg {
+      img {
+        width: 220px;
+        border-radius: 20px;
+        pointer-events: none;
+      }
+    }
+  }
+}
+.customnavbttn {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: $secondcolor;
+  display: none;
+  transform: translate(45%, 45%);
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  h1 {
+    margin-right: 40%;
+    margin-bottom: 30%;
+    color: white;
+    font-size: 50px;
+    padding-bottom: 100px;
+  }
+}
+.circle {
+  border-radius: 50%;
+  animation-duration: 7000ms;
+  position: fixed;
+  bottom: -10%;
+  transform: translateY(100%);
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  background-color: rgba(240, 229, 84, 0.452);
+  z-index: 1;
+}
+#firstcircle {
+  animation-duration: 5000ms;
+  width: 150px;
+  height: 150px;
+  right: 0%;
+  animation-delay: 0ms;
+}
+#secondcircle {
+  animation-duration: 2500ms;
+
+  width: 300px;
+  height: 300px;
+  right: 10%;
+  animation-delay: 3300ms;
+}
+#thirdcircle {
+  animation-duration: 10000ms;
+
+  width: 100px;
+  height: 100px;
+  right: 20%;
+  animation-delay: 2000ms;
+}
+#fourthcircle {
+  animation-duration: 10000ms;
+
+  width: 95px;
+  height: 95px;
+  right: 30%;
+  animation-delay: 4000ms;
+}
+#lastcircle {
+  animation-duration: 4000ms;
+
+  width: 100px;
+  height: 100px;
+  right: 40%;
+  animation-delay: 6500ms;
+}
+.footer {
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  background-color: $secondcolor;
+  color: $firstcolor;
+  font-size: 20px;
+  z-index: 99;
+}
+@keyframes circlesanimate {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: 150%;
+  }
+}
